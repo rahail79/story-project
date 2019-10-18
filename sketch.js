@@ -3,16 +3,16 @@ var veryHungry = false;
 function setup() {
 
   // Change these to change the title and author of the story
-  document.getElementById('title').innerHTML="Goldilocks & the Three Bears"; // title
+  document.getElementById('title').innerHTML="3 Little Pigs"; // title
 
-  document.getElementById('author').innerHTML="Jon Stapleton"; // author
+  document.getElementById('author').innerHTML="Robel H"; // author
 
 
-  
+
   // All of your code goes under here
-  
 
-  var story = 'Goldilocks has been lost in the woods for ' + many() + ' hours. Eventually she discovers a house, and smells something delicious. ' + delicious(); // Create the text
+
+  var story = 'The three little Pigs have been trapped ' + many() + ' hours. Eventually she discovers a house, and smells something delicious. ' + delicious(); // Create the text
 
   printToPage(story); // Print the text to the webpage
 }
@@ -54,4 +54,4 @@ function printToPage(story) {
   var t = document.createTextNode(story);
   para.appendChild(t);
   document.getElementById("story").appendChild(para);
-}    
+}
